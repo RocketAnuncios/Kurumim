@@ -51,6 +51,15 @@
             border-radius: 12px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
         }
+        .technical-image {
+            width: 100%;
+            height: auto;
+            max-height: 400px;
+            object-fit: contain;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e2e8f0;
+        }
     </style>
 </head>
 <body class="text-gray-800">
@@ -109,7 +118,7 @@
         </section>
 
         <!-- Tabela Detalhada -->
-        <section class="bg-white rounded-2xl shadow-lg overflow-hidden">
+        <section class="bg-white rounded-2xl shadow-lg overflow-hidden mb-12">
             <div class="px-6 py-5 border-b border-gray-100">
                 <h2 class="text-xl font-bold text-gray-800">Desempenho por Conjunto de Anúncios</h2>
                 <p class="text-sm text-gray-500 mt-1">Comparativo entre os anúncios ativos</p>
@@ -145,6 +154,18 @@
             </div>
             <div class="px-6 py-4 bg-gray-50 text-xs text-gray-500 border-t border-gray-100">
                 * CPR = Custo por Conversa. Calculado com base no valor total investido e nas conversas iniciadas via mensagem.
+            </div>
+        </section>
+
+        <!-- Nova Seção: Dados Técnicos -->
+        <section class="bg-white rounded-2xl shadow-lg p-6 mb-12">
+            <h2 class="text-xl font-bold text-gray-800 mb-4">📊 Dados Técnicos</h2>
+            <p class="text-sm text-gray-600 mb-6">Visão detalhada dos dados brutos do Facebook Ads Manager.</p>
+            <div class="flex justify-center">
+                <img src="https://i.imgur.com/OwRKQL1.png" alt="Dados Técnicos do Facebook Ads Manager" class="technical-image" />
+            </div>
+            <div class="mt-4 text-xs text-gray-500 text-center">
+                Captura de tela dos dados técnicos extraídos do painel de anúncios.
             </div>
         </section>
 
