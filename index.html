@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Relatório de Performance - Kurumim</title>
+    <link rel="icon" href="https://i.imgur.com/HVrxtCq.png" type="image/png" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -60,6 +61,17 @@
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
             border: 1px solid #e2e8f0;
         }
+        .indicator-card {
+            background: white;
+            border-radius: 1rem;
+            padding: 1.25rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .indicator-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
     </style>
 </head>
 <body class="text-gray-800">
@@ -114,6 +126,44 @@
                 <p class="text-sm font-semibold text-gray-500 uppercase tracking-wider">Cliques (Todos)</p>
                 <p class="text-3xl font-bold text-gray-900 mt-1">1.483</p>
                 <p class="text-xs text-gray-400 mt-1">Interesses gerados</p>
+            </div>
+        </section>
+
+        <!-- Indicadores Técnicos -->
+        <section class="mb-12">
+            <h2 class="text-xl font-bold text-gray-800 mb-4">📈 Indicadores Técnicos</h2>
+            <p class="text-sm text-gray-600 mb-6">Métricas agregadas de alcance, engajamento e visibilidade.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Alcance -->
+                <div class="indicator-card">
+                    <p class="text-sm font-medium text-gray-500">Alcance Total</p>
+                    <p class="text-2xl font-bold text-gray-900 mt-1">15.478</p>
+                    <p class="text-xs text-gray-400 mt-1">Pessoas únicas alcançadas</p>
+                </div>
+                <!-- Impressões -->
+                <div class="indicator-card">
+                    <p class="text-sm font-medium text-gray-500">Impressões Totais</p>
+                    <p class="text-2xl font-bold text-gray-900 mt-1">46.712</p>
+                    <p class="text-xs text-gray-400 mt-1">Visualizações dos anúncios</p>
+                </div>
+                <!-- Engajamentos -->
+                <div class="indicator-card">
+                    <p class="text-sm font-medium text-gray-500">Engajamentos com Post</p>
+                    <p class="text-2xl font-bold text-gray-900 mt-1">1.137</p>
+                    <p class="text-xs text-gray-400 mt-1">Curtidas, comentários, compartilhamentos</p>
+                </div>
+                <!-- Visitas ao Perfil IG -->
+                <div class="indicator-card">
+                    <p class="text-sm font-medium text-gray-500">Visitas ao Perfil Instagram</p>
+                    <p class="text-2xl font-bold text-gray-900 mt-1">1.093</p>
+                    <p class="text-xs text-gray-400 mt-1">Tráfego direto para o perfil</p>
+                </div>
+                <!-- Custo por Contato -->
+                <div class="indicator-card">
+                    <p class="text-sm font-medium text-gray-500">Custo por Contato (Média)</p>
+                    <p class="text-2xl font-bold text-gray-900 mt-1">R$ 3,31</p>
+                    <p class="text-xs text-gray-400 mt-1">Baseado em contatos por mensagem</p>
+                </div>
             </div>
         </section>
 
